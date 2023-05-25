@@ -22,12 +22,6 @@ jobs:
           chmod +x ./cm
           ./cm selenoid start --vnc  
 
-#      - name: Build and test
-#        env:
-#          BROWSER: chrome
-#        run: mvn clean test -DBROWSER=$BROWSER -Dselenide.browser=$BROWSER -Dselenide.remote=http://localhost:4444/wd/hub
-
-
       - name: Build and test with Maven
         run: mvn clean test
 
